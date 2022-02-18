@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backWhite"
+    tools:context=".activity.TestActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/antic"
+                android:text="Тест 7 класс"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/antic"
+                android:text="1. Если две параллельные прямые пересечены секущей,то:"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="1dp"
+                    android:text="сумма накрест лежащих углов равна 180*"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="-15dp"
+                    android:text="соответственные углы равны"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/rb1"
+                    app:layout_constraintTop_toTopOf="@+id/rb1" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="-15dp"
+                    android:text="односторонние углы равны"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/rb2"
+                    app:layout_constraintTop_toTopOf="@+id/rb2" />
+            </RadioGroup>
+
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/antic"
+                android:text="2. Если точка С делит отрезок АВ на два отрезка,то:"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rb3" />
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="длина отрезка СВ равна сумме длин отрезков АС и Ав"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="длина отрезка АС равна сумме длин отрезков АВ и ВС"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb4"
+                app:layout_constraintTop_toTopOf="@+id/rb4" />
+
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="длина отрезка ВС равна разности длин отрезков АВ и АС"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb5"
+                app:layout_constraintTop_toTopOf="@+id/rb5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/antic"
+                android:text="3. Два угла называют смежными,если:"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rb6" />
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+            <RadioButton
+                android:id="@+id/rb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="у них одна сторона общая, а две другие являются продолжениями одна другой"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <RadioButton
+                android:id="@+id/rb8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="их сумма равна 180 *"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb7"
+                app:layout_constraintTop_toTopOf="@+id/rb7" />
+
+            <RadioButton
+                android:id="@+id/rb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="они равны"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb8"
+                app:layout_constraintTop_toTopOf="@+id/rb8" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/antic"
+                android:text="4. Если прямая перпендикулярна одной из двух параллельных прямых,то:"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rb9" />
+
+            <RadioGroup
+                android:id="@+id/rg4"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+            <RadioButton
+                android:id="@+id/rb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="другую прямую она не пересекает"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+            <RadioButton
+                android:id="@+id/rb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="другой прямой она параллельна"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb10"
+                app:layout_constraintTop_toTopOf="@+id/rb10" />
+
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="она перпендикулярна и другой прямой"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb11"
+                app:layout_constraintTop_toBottomOf="@+id/rb10" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/antic"
+                android:text="5. При пересечении двух прямых  секущей образуются углы,имеющие специальные названия:"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rb12" />
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+            <RadioButton
+                android:id="@+id/rb13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="смежные и вертикальные"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioButton
+                android:id="@+id/rb14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="острые,тупые и прямые"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb13"
+                app:layout_constraintTop_toTopOf="@+id/rb13" />
+
+            <RadioButton
+                android:id="@+id/rb15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="накрест лежащие,соответственные,односторонние"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb14"
+                app:layout_constraintTop_toBottomOf="@+id/rb13" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/antic"
+                android:text="6. Выберите утверждение,которое является признаком параллельности прямых:"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/rb16"
+                app:layout_constraintTop_toBottomOf="@+id/rb15" />
+            <RadioGroup
+                android:id="@+id/rg6"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+            <RadioButton
+                android:id="@+id/rb16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="при пересечении двух параллельных прямых секущей накрест лежащие углы равны"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb17"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <RadioButton
+                android:id="@+id/rb17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="если при пересечении двух прямых секущей односторонние углы равны,то прямые параллельны"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb18"
+                app:layout_constraintTop_toTopOf="@+id/rb16" />
+
+            <RadioButton
+                android:id="@+id/rb18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="если при пересечении двух прямых секущей накрест лежащие углы равны,то прямые параллельны"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/rb17" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/antic"
+                android:text="7.Если прямая не пересекает одну из двух параллельных прямых,то:"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/rb18"
+                app:layout_constraintTop_toBottomOf="@+id/rb18" />
+            <RadioGroup
+                android:id="@+id/rg7"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+            <RadioButton
+                android:id="@+id/rb19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1dp"
+                android:text="другую пряиую она тоже не пересекает"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <RadioButton
+                android:id="@+id/rb20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="другую прямую она пересекает"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb19"
+                app:layout_constraintTop_toTopOf="@+id/rb19" />
+
+            <RadioButton
+                android:id="@+id/rb21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-15dp"
+                android:text="другой прямой она перпендикулярна"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rb20"
+                app:layout_constraintTop_toTopOf="@+id/rb20" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttontr"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:text="Ответ" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
